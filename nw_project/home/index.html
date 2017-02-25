@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	   #map {
+        height: 400px;
+        width: 100%;
+       }
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+	<title>New Westminster Helping Hub</title>
+</head>
+<body>
+	<div class="container-fluid">
+	<h1>
+  		<span>New Westminster Helping Hub</span>
+  		<button class='btn btn-primary pull-right'>Log in</button>
+	</h1>
+	<!-- user info and map-->
+	<div class="row">
+    <div class="col-md-6">
+      <div id="postings" class="well">
+      		<div id="post1" class="well">
+      		<div class="row">
+      			<div style="font:15px;" class="col-xs-8">
+      				<p> 123 Wall St </p>
+      			</div>
+      			<div class="col-xs-4">
+      				<p class="pull-right"> Solved </p>
+      			</div>
+      		</div>
+      		<div class="row">
+      			<div class="col-xs-8">
+      			<p>Contact info: 604-788-9090</p>
+      			</div>
+      		</div>
+
+      		<div class="row">
+      			<div class="col-xs-8">
+      			<p>Urgency: High</p>
+      			</div>
+      			<div class="col-xs-4">
+      			<p class="pull-right">10 km away</p>
+      			</div>      			
+      		</div>
+      		<div class="row">
+      			<div class="col-xs-8">
+      			<p>Description: Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+      			</div>
+      			<div class="col-xs-4">
+      			<button class='btn btn-info pull-right'>I can help!</button>
+      			</div>      			
+      		</div>
+      		</div>
+      		<!-- second posting -->
+      		<div id="post2" class="well">
+      		<div class="row">
+      			<div style="font:15px;" class="col-xs-8">
+      				<p> 123 Wall St </p>
+      			</div>
+      			<div class="col-xs-4">
+      				<p class="pull-right"> Solved </p>
+      			</div>
+      		</div>
+      		<div class="row">
+      			<div class="col-xs-8">
+      			<p>Contact info: 604-788-9090</p>
+      			</div>
+      		</div>
+
+      		<div class="row">
+      			<div class="col-xs-8">
+      			<p>Urgency: High</p>
+      			</div>
+      			<div class="col-xs-4">
+      			<p class="pull-right">10 km away</p>
+      			</div>      			
+      		</div>
+      		<div class="row">
+      			<div class="col-xs-8">
+      			<p>Description: Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+      			</div>
+      			<div class="col-xs-4 text-bottom">
+      			<button class='btn btn-info pull-right'>I can help!</button>
+      			</div>      			
+      		</div>
+      		</div> 	 		 		     		
+      </div>
+    </div>
+    <div class="col-md-6">
+    	<h1>haha</h1>
+      <div id="map"></div>
+    </div>
+
+    <!-- END user info and map-->
+
+	</div>
+
+	<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzIJK2jYh-K8EMENlbTxm1_PYRK4Kq4p4&callback=initMap">
+    </script>
+</body>
+</html>
