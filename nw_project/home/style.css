@@ -1,3 +1,29 @@
 #postings {
-	overflow: scroll
+	overflow: scroll;
+	height: 600px;
 }
+#map {
+	height: 400px;
+	width: 100%;
+}
+
+.post-box {
+	border-radius = 20px;
+	position:;
+  	margin:10px 10px 10px 10px;
+  	width:auto;
+  	padding:10px 20px;
+  	display:table;
+  	background-color:#FFFFFF;
+}
+
+#filter-menu {
+	border-radius = 20px;
+	position:;
+  	/*margin:10px 10px 10px 10px;*/
+  	width:auto;
+  	padding:10px 20px;
+/*  	display:table;*/
+  	background-color:#FFFFFF;
+}
+
