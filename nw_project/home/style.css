@@ -1,20 +1,35 @@
-#postings {
-	overflow: scroll;
-	height: 600px;
+
+
+#title{
+	font-family: Sansita, sans-serif;
+	font: 20px;
 }
-#map {
-	height: 400px;
-	width: 100%;
+.inline {
+   display:inline-block;
+   margin-right:5px;
 }
 
-.post-box {
-	border-radius = 20px;
-	position:;
-  	margin:10px 10px 10px 10px;
-  	width:auto;
-  	padding:10px 20px;
-  	display:table;
-  	background-color:#FFFFFF;
+#postings {
+	overflow: scroll;
+	height: 500px;
+}
+
+#flag-button{
+	margin-top: 5px;
+	margin-bottom: 10px;
+
+}
+
+#greeting {
+	font-size: 15px;
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+    border-color: green;
+    border-width: 5px;
+    border-style: solid;
 }
 
 #filter-menu {
@@ -26,4 +41,16 @@
 /*  	display:table;*/
   	background-color:#FFFFFF;
 }
+
+.post-box {
+	border-radius = 20px;
+	position: ;
+	width: 98%;
+  	margin:10px 10px 5px 5px;
+  	padding:10px 10px;
+  	display:table;
+  	background-color:#FFFFFF;
+}
+
+
 

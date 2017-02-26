@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Log in</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Sansita:800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+</head>
+<body>
+  <div class="container-fluid">
+  <h1>
+      <span id="title">
+      <!-- <img src="http://opendata.newwestcity.ca/images/city-of-new-westminster.png" style="height:70px;"> -->
+      New Westminster Helping Hub</span>
+       <a href="login_form.html" class='btn btn-primary pull-right inline'>Log in</button>
+       <a href="report_form.html" class="btn btn-warning pull-right inline">Ask For Help!</a>
+       <a href="index.html" class='btn btn-default pull-right inline'>Home</a>   
+  </h1>
+    <div class="alert alert-danger">
+    	<marquee behavior="scroll" direction="left"><strong>Alert: </strong>Snowfall warning in effect, view map for traffic updates</marquee>
+    </div>
+
+  <div class="row">
+  	<div class="col-md-3">
+  	</div>
+  	<div class="col-md-6">
+  		<div class="well">
+  			<h2>Please enter information about the incident: </h2>
+  			<form>
+    		<div class="form-group">
+            <br/>
+      			<label for="address">Address of Incident:</label>
+      			<input type="address" class="form-control" id="address" placeholder="Enter address of incident">
+    		</div>
+
+        <br/>  
+        <label>Category: </label>    
+          <form> 
+            <label class="radio-inline">
+                <input type="radio" name="optradio">Snow
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">Fallen Tree
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">Accident
+            </label>
+            <label class="radio-inline">
+               <input type="radio" name="optradio">Other
+            </label>
+          </form>  
+
+    		<div class="form-group">
+          <br/>
+		      <label for="phone_number">Desription:</label>
+		      <input type="desription" class="form-control" id="description" placeholder="short description of incident">
+		    </div>
+		    <a class="btn btn-default" href = "thankyou_page.html">Submit</a>
+		    </form>
+
+  		</div>
+  	</div>
+  	<div class="col-md-3">
+  	</div>
+
+
+  </div>
+  </div>
+</body>

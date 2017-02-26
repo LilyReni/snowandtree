@@ -6,8 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   
   
-    <!-- <script src="javascript.js"></script> -->
-
+  
 <link href="https://fonts.googleapis.com/css?family=Sansita:800" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
@@ -19,10 +18,12 @@
       <span id="title">
       <!-- <img src="http://opendata.newwestcity.ca/images/city-of-new-westminster.png" style="height:70px;"> -->
       New Westminster Helping Hub</span>
-
-       <a href="login_form.html" class='btn btn-primary pull-right inline'>Log in</button>
+       <a href="login_form.html" class='btn btn-primary pull-right inline'>Sign out</button>
        <a href="report_form.html" class="btn btn-warning pull-right inline">Ask For Help!</a>
        <a href="index.html" class='btn btn-default pull-right inline'>Home</a>
+       <p id="greeting" class="pull-right">Welcome, Natalie.</p>
+
+
        
        
 	</h1>
@@ -42,7 +43,7 @@
               <span class="caret"></span></button>
               <ul class="dropdown-menu">
                 <li><a href="#" id="all" onclick="filterAll()">All</a></li>
-                <li><a href="#" id="snow-ice" onclick="filterSnow()" >Snow/Ice</a></li>
+                <li><a href="#" id="snow-ice" onclick="filterSnow()">Snow/Ice</a></li>
                 <li><a href="#" id="tree" onclick="filterTree()">Fallen Tree</a></li>
                 <li><a href="#" id="other" onclick="filterOther()">Other</a></li>
               </ul>
@@ -318,20 +319,6 @@
 
 	$(document).ready(function() {
 		$(".dropdown-toggle").dropdown();
-
-  //     jQuery("#snow-ice").on('click',function(){
-  //   filterPostsByCategory("Snow/Ice");
-  //   // e.preventDefault();
-  // });
-  // jQuery("#tree").on('click',function(){
-  //   filterPostsByCategory("Fallen Tree");
-  //   // e.preventDefault();
-  // });
-  // jQuery("#other").on('click',function(){
-  //   filterPostsByCategory("Other");
-  //   // e.preventDefault();
-  // });
-
 	});
 
       function initMap() {
