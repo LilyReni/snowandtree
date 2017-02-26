@@ -1,17 +1,37 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Help Form</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Sansita:800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
 </head>
 <body>
+  <div class="container-fluid">
+  <h1>
+      <span id="title">
+      <!-- <img src="http://opendata.newwestcity.ca/images/city-of-new-westminster.png" style="height:70px;"> -->
+      New Westminster Helping Hub</span>
+       <a href="login_form.html" class='btn btn-primary pull-right inline'>Log in</button>
+       <a href="report_form.html" class="btn btn-warning pull-right inline">Ask For Help!</a>
+       <a href="index.html" class='btn btn-default pull-right inline'>Home</a>   
+  </h1>
+  <div class="alert alert-danger">
+    <marquee behavior="scroll" direction="left"><strong>Alert: </strong>Snowfall warning in effect, view map for traffic updates</marquee>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-6">
+  <div class="well">
 
-<div class="container">
-  <h2>Enter Your Information Here</h2>
+  <h2>Enter your information to request for help</h2>
   <form>
     <div class="form-group">
       <label for="address">Address:</label>
@@ -28,9 +48,9 @@
       
       
       
-    <label>Urgency:</label>   
+    <label>Urgency: </label>   
+    <br/>
     <form>
-       
     <label class="radio-inline">
       <input type="radio" name="optradio">As Soon As Possible
     </label>
@@ -43,7 +63,7 @@
     </form>  
       
     <br/>  
-    <label>Category:</label>    
+    <label>Category: </label>    
     <form> 
     <label class="radio-inline">
       <input type="radio" name="optradio">Snow
@@ -67,6 +87,11 @@
     <!--    <button type="submit" class="btn btn-default">Submit</button>-->
     <a class="btn btn-default" href = "index.html">Submit</a>
   </form>
+  </div>
+  <div class="col-md-3">
+  </div>
+  </div>
+
 </div>
 
 </body>

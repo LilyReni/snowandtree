@@ -6,8 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   
   
-    <!-- <script src="javascript.js"></script> -->
-
+  
 <link href="https://fonts.googleapis.com/css?family=Sansita:800" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
@@ -19,10 +18,12 @@
       <span id="title">
       <!-- <img src="http://opendata.newwestcity.ca/images/city-of-new-westminster.png" style="height:70px;"> -->
       New Westminster Helping Hub</span>
-
-       <a href="login_form.html" class='btn btn-primary pull-right inline'>Log in</button>
+       <a href="login_form.html" class='btn btn-primary pull-right inline'>Sign out</button>
        <a href="report_form.html" class="btn btn-warning pull-right inline">Ask For Help!</a>
        <a href="index.html" class='btn btn-default pull-right inline'>Home</a>
+       <p id="greeting" class="pull-right">Welcome, Natalie.</p>
+
+
        
        
 	</h1>
@@ -42,7 +43,7 @@
               <span class="caret"></span></button>
               <ul class="dropdown-menu">
                 <li><a href="#" id="all" onclick="filterAll()">All</a></li>
-                <li><a href="#" id="snow-ice" onclick="filterSnow()" >Snow/Ice</a></li>
+                <li><a href="#" id="snow-ice" onclick="filterSnow()">Snow/Ice</a></li>
                 <li><a href="#" id="tree" onclick="filterTree()">Fallen Tree</a></li>
                 <li><a href="#" id="other" onclick="filterOther()">Other</a></li>
               </ul>
@@ -83,9 +84,6 @@
 	<!-- user info and map-->
 	<div class="row">
     <div class="col-md-6">
-
-
-
 
     <div id="postings" class="well">
 
@@ -311,9 +309,6 @@
     </div>
     <div class="col-md-6">
 
-
-
-
       <div id="map"></div>
     </div>
 
@@ -324,99 +319,24 @@
 
 	$(document).ready(function() {
 		$(".dropdown-toggle").dropdown();
-
-  //     jQuery("#snow-ice").on('click',function(){
-  //   filterPostsByCategory("Snow/Ice");
-  //   // e.preventDefault();
-  // });
-  // jQuery("#tree").on('click',function(){
-  //   filterPostsByCategory("Fallen Tree");
-  //   // e.preventDefault();
-  // });
-  // jQuery("#other").on('click',function(){
-  //   filterPostsByCategory("Other");
-  //   // e.preventDefault();
-  // });
-
 	});
 
       function initMap() {
-        var acc_1 = {lat: 49.215, lng: -122.920};
+        var acc_1 = {lat: 49.194, lng: -122.927};
         var acc_2 = {lat: 49.223, lng: -122.892};
-        var acc_3 = {lat: 49.202, lng: -122.940};
-
-		icon = 'https://maps.google.com/mapfiles/kml/shapes/flag_maps.png';
 
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
           center: acc_1
-          <!--zoom: 4,-->
-    	  <!--center: {lat: -28, lng: 137}-->
         });
-
-
-
         var marker = new google.maps.Marker({
           position: acc_1,
-          map: map,
-          icon: icon
+          map: map
         });
-        var marker2 = new google.maps.Marker({
+        var marker = new google.maps.Marker({
           position: acc_2,
-          map: map,
-          icon: icon
+          map: map
         });
-        var marker3 = new google.maps.Marker({
-          position: acc_3,
-          map: map,
-          icon: icon
-        });
-
-
-        var acc_1 = 'Description: Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.';
-        var acc_2 = 'Ha Ha 2';
-        var acc_3 = 'Ha Ha 3';
-
-        var infowindow = new google.maps.InfoWindow({
-			content: acc_1
-		  });
-
-		marker.addListener('click', function() {
-			infowindow.open(map, marker);
-		  });
-
-		var infowindow2 = new google.maps.InfoWindow({
-			content: acc_2
-		  });
-
-		marker2.addListener('click', function() {
-			infowindow2.open(map, marker2);
-		  });
-
-		var infowindow3 = new google.maps.InfoWindow({
-			content: acc_3
-		  });
-
-		marker3.addListener('click', function() {
-			infowindow3.open(map, marker3);
-		  });
-
-
-        $( "#post1" ).click(function() {
-  			infowindow.open(map, marker);
-		});
-
-		$( "#post2" ).click(function() {
-  			infowindow2.open(map, marker2);
-		});
-
-		$( "#post3" ).click(function() {
-  			infowindow3.open(map, marker3);
-		});
-
-
-        map.data.loadGeoJson(
-        'BUS_ROUTES.geojson');
     }
 
     function filterAll() {
