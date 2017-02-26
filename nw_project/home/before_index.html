@@ -12,11 +12,12 @@
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
 	<title>New Westminster Helping Hub</title>
+
 </head>
 <body>
 	<div class="container-fluid">
 	<h1>
-      <image src="snowandtree.jpg"/>
+	  <image src="snowandtree.jpg"/>
       <span id="title">
       <!-- <img src="http://opendata.newwestcity.ca/images/city-of-new-westminster.png" style="height:70px;"> -->
       New Westminster Helping Hub</span>
@@ -89,45 +90,8 @@
 
 
     <div id="postings" class="well">
-            <!-- added posting -->
 
-      		<div id="post0" class="post-box">
-      		<div class="row">
-      			<div style="font:15px;" class="col-xs-8">
-      				<p><strong>New Westminster City Hall</strong></p>
-      			</div>
-      			<div class="col-xs-4">
-      				<p class="pull-right">Unresolved</p>
-                    <p style="color:red;font-style: italic;">New</p>
-      			</div>
-      		</div>
-      		<div class="row">
-      			<div class="col-xs-8">
-      			<p><strong>Contact info: </strong> 604-788-2333</p>
-      			</div>
-      		</div>
-
-      		<div class="row">
-      			<div class="col-xs-8">
-      			<p><strong>Urgency: </strong>High</p>
-      			</div>
-      			<div class="col-xs-4">
-      			<p class="pull-right"><strong>0.1 km away</strong></p>
-      			</div>
-      		</div>
-      		<div class="row">
-      			<div class="col-xs-9">
-      			<p><strong>Description: </strong>More snow here</p>
-      			</div>
-            <div class="col-xs-1">
-            </div>
-      			<div class="col-xs-2">
-      			<a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-      			</div>
-      		</div>
-      		</div>
       		<!-- first posting -->
-
       		<div id="post1" class="post-box">
       		<div class="row">
       			<div style="font:15px;" class="col-xs-8">
@@ -379,7 +343,6 @@
 	});
 
       function initMap() {
-        var acc_0 = {lat: 49.206, lng: -122.910};
         var acc_1 = {lat: 49.215, lng: -122.920};
         var acc_2 = {lat: 49.223, lng: -122.892};
         var acc_3 = {lat: 49.202, lng: -122.940};
@@ -395,11 +358,6 @@
         });
 
 
-        var marker0 = new google.maps.Marker({
-          position: acc_0,
-          map: map,
-          icon: icon
-        });
 
         var marker = new google.maps.Marker({
           position: acc_1,
@@ -417,26 +375,13 @@
           icon: icon
         });
 
-        var marker4 = new google.maps.Marker({
-          position: acc_4,
-          map: map,
-          icon: 'road.png'
-        });
 
-        var acc_text_0 = 'New Westminster City Hall';
+
+
+
         var acc_text_1 = '668 Columbia Street';
         var acc_text_2 = '109 Francis Way';
         var acc_text_3 = '1045 Quayside Drive';
-
-
-        var infowindow0 = new google.maps.InfoWindow({
-			content: acc_text_0
-		  });
-
-        marker0.addListener('click', function() {
-			infowindow0.open(map, marker0);
-		  });
-
 
         var infowindow = new google.maps.InfoWindow({
 			content: acc_text_1
@@ -462,10 +407,6 @@
 			infowindow3.open(map, marker3);
 		  });
 
-
-        $( "#post0" ).click(function() {
-  			infowindow0.open(map, marker0);
-		});
 
         $( "#post1" ).click(function() {
   			infowindow.open(map, marker);

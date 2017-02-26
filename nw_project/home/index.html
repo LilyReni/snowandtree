@@ -31,7 +31,7 @@
 
 
     <div class="alert alert-danger">
-    <marquee behavior="scroll" direction="left"><strong>Alert: </strong>Snowfall warning in effect, view map for traffic updates</marquee>
+    <marquee behavior="scroll" direction="left"><strong>Alert: </strong>Snowfall warning in effect, view map for traffic updates. Please remember to dress warm.</marquee>
     </div>
 
   <div class="row">
@@ -346,6 +346,7 @@
         var acc_1 = {lat: 49.215, lng: -122.920};
         var acc_2 = {lat: 49.223, lng: -122.892};
         var acc_3 = {lat: 49.202, lng: -122.940};
+        var acc_4 = {lat: 49.218, lng: -122.892};
 
 		icon = 'https://maps.google.com/mapfiles/kml/shapes/flag_maps.png';
 
@@ -372,6 +373,12 @@
           position: acc_3,
           map: map,
           icon: icon
+        });
+
+        var marker4 = new google.maps.Marker({
+          position: acc_4,
+          map: map,
+          icon: 'road.png'
         });
 
 
