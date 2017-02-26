@@ -45,7 +45,7 @@
 			</div>
 			</div>
 			<div id="search-box" class="col-xs-6">
-				<input class="pull-right" type="text" placeholder="Search keyword">
+				<input id="autocomplete" class="pull-right" type="text" placeholder="Search keyword">
 			</div>
 
 			<div class="col-xs-2">
@@ -161,8 +161,9 @@
     </div>
     </div>
     <div class="col-md-6">
-
-    	<h1>haha</h1>
+	  <br/>
+		<br/>
+		<br/>
       <div id="map"></div>
     </div>
 
@@ -177,21 +178,82 @@
 	});
 
       function initMap() {
-        var acc_1 = {lat: 49.194, lng: -122.927};
+        var acc_1 = {lat: 49.215, lng: -122.920};
         var acc_2 = {lat: 49.223, lng: -122.892};
+        var acc_3 = {lat: 49.202, lng: -122.940};
+
+		icon = 'https://maps.google.com/mapfiles/kml/shapes/flag_maps.png';
 
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
           center: acc_1
+          <!--zoom: 4,-->
+    	  <!--center: {lat: -28, lng: 137}-->
         });
+
+
+
         var marker = new google.maps.Marker({
           position: acc_1,
-          map: map
+          map: map,
+          icon: icon
         });
-        var marker = new google.maps.Marker({
+        var marker2 = new google.maps.Marker({
           position: acc_2,
-          map: map
+          map: map,
+          icon: icon
         });
+        var marker3 = new google.maps.Marker({
+          position: acc_3,
+          map: map,
+          icon: icon
+        });
+
+
+        var acc_1 = 'Description: Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.';
+        var acc_2 = 'Ha Ha 2';
+        var acc_3 = 'Ha Ha 3';
+
+        var infowindow = new google.maps.InfoWindow({
+			content: acc_1
+		  });
+
+		marker.addListener('click', function() {
+			infowindow.open(map, marker);
+		  });
+
+		var infowindow2 = new google.maps.InfoWindow({
+			content: acc_2
+		  });
+
+		marker2.addListener('click', function() {
+			infowindow2.open(map, marker2);
+		  });
+
+		var infowindow3 = new google.maps.InfoWindow({
+			content: acc_3
+		  });
+
+		marker3.addListener('click', function() {
+			infowindow3.open(map, marker3);
+		  });
+
+
+        $( "#post1" ).click(function() {
+  			infowindow.open(map, marker);
+		});
+
+		$( "#post2" ).click(function() {
+  			infowindow2.open(map, marker2);
+		});
+
+		$( "#post3" ).click(function() {
+  			infowindow3.open(map, marker3);
+		});
+
+
+        map.data.loadGeoJson(
+        'BUS_ROUTES.geojson');
     }
     </script>
     <script async defer
