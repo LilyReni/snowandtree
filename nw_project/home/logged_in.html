@@ -34,7 +34,7 @@
     <marquee behavior="scroll" direction="left"><strong>Alert: </strong>Snowfall warning in effect, view map for traffic updates. Please remember to dress warm.</marquee>
     </div>
 
-  <div class="row">
+<div class="row">
     <div class="col-md-6">
         <div id="filter-menu">
         <div class="row">
@@ -44,7 +44,7 @@
               <span class="caret"></span></button>
               <ul class="dropdown-menu">
                 <li><a href="#" id="all" onclick="filterAll()">All</a></li>
-                <li><a href="#" id="snow-ice" onclick="filterSnow()">Snow/Ice</a></li>
+                <li><a href="#" id="snow-ice" onclick="filterSnow()" >Snow/Ice</a></li>
                 <li><a href="#" id="tree" onclick="filterTree()">Fallen Tree</a></li>
                 <li><a href="#" id="other" onclick="filterOther()">Other</a></li>
               </ul>
@@ -82,83 +82,87 @@
     </div>
     </div>
 
-	<!-- user info and map-->
-	<div class="row">
+  <!-- user info and map-->
+  <div class="row">
     <div class="col-md-6">
+
+
+
 
     <div id="postings" class="well">
             <!-- added posting -->
 
-      		<div id="post0" class="post-box">
-      		<div class="row">
-      			<div style="font:15px;" class="col-xs-8">
-      				<p><strong>New Westminster City Hall</strong></p>
-      			</div>
-      			<div class="col-xs-4">
-      				<p class="pull-right">On the Way</p>
+          <div id="post0" class="post-box">
+          <div class="row">
+            <div style="font:15px;" class="col-xs-8">
+              <p><strong>New Westminster City Hall</strong></p>
+            </div>
+            <div class="col-xs-4">
+              <p class="pull-right"><strong>Help is on the way</strong></p>
                     <p style="color:red;font-style: italic;">New</p>
-      			</div>
-      		</div>
-      		<div class="row">
-      			<div class="col-xs-8">
-      			<p><strong>Contact info: </strong> 604-788-2333</p>
-      			</div>
-      		</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-8">
+            <p><strong>Contact info: </strong> 604-788-2333</p>
+            </div>
+          </div>
 
-      		<div class="row">
-      			<div class="col-xs-8">
-      			<p><strong>Urgency: </strong>High</p>
-      			</div>
-      			<div class="col-xs-4">
-      			<p class="pull-right"><strong>0.1 km away</strong></p>
-      			</div>
-      		</div>
-      		<div class="row">
-      			<div class="col-xs-9">
-      			<p><strong>Description: </strong>More snow here</p>
-      			</div>
+          <div class="row">
+            <div class="col-xs-8">
+            <p><strong>Urgency: </strong>High</p>
+            </div>
+            <div class="col-xs-4">
+            <p class="pull-right"><strong>0.1 km away</strong></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-9">
+            <p><strong>Description: </strong>The city hall needs your help! Too many cars are stuck on the hill, we would really appreciate it if the community can help with clearing the snow!</p>
+            </div>
             <div class="col-xs-1">
             </div>
-      			<div class="col-xs-2">
-      			<a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-      			</div>
-      		</div>
-      		</div>
-      		<!-- first posting -->
-      		<div id="post1" class="post-box">
-      		<div class="row">
-      			<div style="font:15px;" class="col-xs-8">
-      				<p><strong>668 Columbia Street </strong></p>
-      			</div>
-      			<div class="col-xs-4">
-      				<p class="pull-right">Unresolved</p>
-      			</div>
-      		</div>
-      		<div class="row">
-      			<div class="col-xs-8">
-      			<p><strong>Contact info: </strong> 604-788-9090</p>
-      			</div>
-      		</div>
+            <div class="col-xs-2">
+            <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
+            </div>
+          </div>
+          </div>
+          <!-- first posting -->
 
-      		<div class="row">
-      			<div class="col-xs-8">
-      			<p><strong>Urgency: </strong>High</p>
-      			</div>
-      			<div class="col-xs-4">
-      			<p class="pull-right"><strong>1.6 km away</strong></p>
-      			</div>      			
-      		</div>
-      		<div class="row">
-      			<div class="col-xs-9">
-      			<p><strong>Description: </strong>Car stuck on hill, need help clearing the snow</p>
-      			</div>
+          <div id="post1" class="post-box">
+          <div class="row">
+            <div style="font:15px;" class="col-xs-8">
+              <p><strong>668 Columbia Street </strong></p>
+            </div>
+            <div class="col-xs-4">
+              <p class="pull-right">Unresolved</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-8">
+            <p><strong>Contact info: </strong> 604-788-9090</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-8">
+            <p><strong>Urgency: </strong>High</p>
+            </div>
+            <div class="col-xs-4">
+            <p class="pull-right"><strong>1.6 km away</strong></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-9">
+            <p><strong>Description: </strong>Car stuck on hill, need help clearing the snow</p>
+            </div>
             <div class="col-xs-1">
             </div>
-      			<div class="col-xs-2">
-      			<a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-      			</div>      			
-      		</div>
-      		</div>
+            <div class="col-xs-2">
+            <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
+            </div>
+          </div>
+          </div>
 
           <!-- second posting -->
           <div id="post2" class="post-box">
@@ -182,7 +186,7 @@
             </div>
             <div class="col-xs-4">
             <p class="pull-right"><strong>2.0 km away</strong></p>
-            </div>            
+            </div>
           </div>
           <div class="row">
             <div class="col-xs-9">
@@ -192,11 +196,11 @@
             </div>
             <div class="col-xs-2">
             <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-            </div>            
+            </div>
           </div>
-          </div>	
+          </div>
 
-      		<!-- third posting -->
+          <!-- third posting -->
           <div id="post3" class="post-box">
           <div class="row">
             <div style="font:15px;" class="col-xs-8">
@@ -218,7 +222,7 @@
             </div>
             <div class="col-xs-4">
             <p class="pull-right"><strong>2.7 km away</strong></p>
-            </div>            
+            </div>
           </div>
           <div class="row">
             <div class="col-xs-9">
@@ -228,9 +232,9 @@
             </div>
             <div class="col-xs-2">
             <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-            </div>            
+            </div>
           </div>
-          </div>  
+          </div>
 
 
           <!-- fourth posting -->
@@ -255,7 +259,7 @@
             </div>
             <div class="col-xs-4">
             <p class="pull-right"><strong>3.2 km away</strong></p>
-            </div>            
+            </div>
           </div>
           <div class="row">
             <div class="col-xs-9">
@@ -265,9 +269,9 @@
             </div>
             <div class="col-xs-2">
             <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-            </div>            
+            </div>
           </div>
-          </div> 
+          </div>
 
           <!-- Fifth posting -->
           <div id="post5" class="post-box">
@@ -291,7 +295,7 @@
             </div>
             <div class="col-xs-4">
             <p class="pull-right"><strong>4.5 km away</strong></p>
-            </div>            
+            </div>
           </div>
           <div class="row">
             <div class="col-xs-9">
@@ -301,9 +305,9 @@
             </div>
             <div class="col-xs-2">
             <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-            </div>            
+            </div>
           </div>
-          </div> 
+          </div>
 
           <!-- Sixth posting -->
           <div id="post6" class="post-box">
@@ -327,7 +331,7 @@
             </div>
             <div class="col-xs-4">
             <p class="pull-right"><strong>6.2 km away</strong></p>
-            </div>            
+            </div>
           </div>
           <div class="row">
             <div class="col-xs-9">
@@ -337,43 +341,66 @@
             </div>
             <div class="col-xs-2">
             <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-            </div>            
+            </div>
           </div>
-          </div> 
+          </div>
 
 
     </div>
     </div>
     <div class="col-md-6">
 
+
+
+
       <div id="map"></div>
     </div>
 
     <!-- END user info -->
 
-	</div>
-	<script>
+  </div>
+  <script>
 
-	$(document).ready(function() {
-		$(".dropdown-toggle").dropdown();
-	});
+  $(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
 
-          function initMap() {
+  //     jQuery("#snow-ice").on('click',function(){
+  //   filterPostsByCategory("Snow/Ice");
+  //   // e.preventDefault();
+  // });
+  // jQuery("#tree").on('click',function(){
+  //   filterPostsByCategory("Fallen Tree");
+  //   // e.preventDefault();
+  // });
+  // jQuery("#other").on('click',function(){
+  //   filterPostsByCategory("Other");
+  //   // e.preventDefault();
+  // });
+
+  });
+
+      function initMap() {
+        var acc_0 = {lat: 49.206, lng: -122.910};
         var acc_1 = {lat: 49.215, lng: -122.920};
         var acc_2 = {lat: 49.223, lng: -122.892};
         var acc_3 = {lat: 49.202, lng: -122.940};
         var acc_4 = {lat: 49.218, lng: -122.892};
 
-		icon = 'https://maps.google.com/mapfiles/kml/shapes/flag_maps.png';
+    icon = 'https://maps.google.com/mapfiles/kml/shapes/flag_maps.png';
 
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
           center: acc_1
           <!--zoom: 4,-->
-    	  <!--center: {lat: -28, lng: 137}-->
+        <!--center: {lat: -28, lng: 137}-->
         });
 
 
+        var marker0 = new google.maps.Marker({
+          position: acc_0,
+          map: map,
+          icon: icon
+        });
 
         var marker = new google.maps.Marker({
           position: acc_1,
@@ -397,46 +424,61 @@
           icon: 'road.png'
         });
 
-        var acc_text_1 = '668 Columbia Street';
-        var acc_text_2 = '109 Francis Way';
-        var acc_text_3 = '1045 Quayside Drive';
+        var acc_text_0 = "New Westminster City Hall <br><br><strong>Description: </strong>The city hall needs your help! <br>Too many cars are stuck on the hill, <br>we would really appreciate it if the <br>community can help with clearing the snow!";
+        var acc_text_1 = "668 Columbia Street <br><br><strong>Description: </strong>Car stuck on hill, need help clearing <br>the snow";
+        var acc_text_2 = "109 Francis Way <br><br><strong>Description: </strong>Family away on vacation, can someone <br>please help shovel snow on the <br>sidewalk? Thank you in advance!";
+        var acc_text_3 = "1045 Quayside Drive <br><br><strong>Description: </strong>Fallen tree in the front yard, would <br>appreciate it if someone can <br>help me clear it!</p>";
+
+
+        var infowindow0 = new google.maps.InfoWindow({
+      content: acc_text_0
+      });
+
+        marker0.addListener('click', function() {
+      infowindow0.open(map, marker0);
+      });
+
 
         var infowindow = new google.maps.InfoWindow({
-			content: acc_text_1
-		  });
+      content: acc_text_1
+      });
 
-		marker.addListener('click', function() {
-			infowindow.open(map, marker);
-		  });
+    marker.addListener('click', function() {
+      infowindow.open(map, marker);
+      });
 
-		var infowindow2 = new google.maps.InfoWindow({
-			content: acc_text_2
-		  });
+    var infowindow2 = new google.maps.InfoWindow({
+      content: acc_text_2
+      });
 
-		marker2.addListener('click', function() {
-			infowindow2.open(map, marker2);
-		  });
+    marker2.addListener('click', function() {
+      infowindow2.open(map, marker2);
+      });
 
-		var infowindow3 = new google.maps.InfoWindow({
-			content: acc_text_3
-		  });
+    var infowindow3 = new google.maps.InfoWindow({
+      content: acc_text_3
+      });
 
-		marker3.addListener('click', function() {
-			infowindow3.open(map, marker3);
-		  });
+    marker3.addListener('click', function() {
+      infowindow3.open(map, marker3);
+      });
 
+
+        $( "#post0" ).click(function() {
+        infowindow0.open(map, marker0);
+    });
 
         $( "#post1" ).click(function() {
-  			infowindow.open(map, marker);
-		});
+        infowindow.open(map, marker);
+    });
 
-		$( "#post2" ).click(function() {
-  			infowindow2.open(map, marker2);
-		});
+    $( "#post2" ).click(function() {
+        infowindow2.open(map, marker2);
+    });
 
-		$( "#post3" ).click(function() {
-  			infowindow3.open(map, marker3);
-		});
+    $( "#post3" ).click(function() {
+        infowindow3.open(map, marker3);
+    });
 
 
         map.data.loadGeoJson(
@@ -444,6 +486,7 @@
     }
 
     function filterAll() {
+      document.getElementById("post0").style.display = "";
       document.getElementById("post1").style.display = "";
       document.getElementById("post2").style.display = "";
       document.getElementById("post3").style.display = "";
@@ -452,6 +495,7 @@
       document.getElementById("post6").style.display = "";
     }
     function filterSnow() {
+      document.getElementById("post0").style.display = "";
       document.getElementById("post1").style.display = "";
       document.getElementById("post2").style.display = "";
       document.getElementById("post3").style.display = "none";
@@ -461,6 +505,7 @@
     }
 
     function filterTree() {
+      document.getElementById("post0").style.display = "none";
       document.getElementById("post1").style.display = "";
       document.getElementById("post2").style.display = "none";
       document.getElementById("post3").style.display = "";
@@ -470,15 +515,17 @@
     }
 
     function filterOther() {
-      document.getElementById("post1").style.display = "";
-      document.getElementById("post2").style.display = "";
-      document.getElementById("post3").style.display = "";
-      document.getElementById("post4").style.display = "";
-      document.getElementById("post5").style.display = "";
-      document.getElementById("post6").style.display = "";
+      document.getElementById("post0").style.display = "none";
+      document.getElementById("post1").style.display = "none";
+      document.getElementById("post2").style.display = "none";
+      document.getElementById("post3").style.display = "none";
+      document.getElementById("post4").style.display = "none";
+      document.getElementById("post5").style.display = "none";
+      document.getElementById("post6").style.display = "none";
     }
 
     function filterHigh() {
+      document.getElementById("post0").style.display = "";
       document.getElementById("post1").style.display = "";
       document.getElementById("post2").style.display = "none";
       document.getElementById("post3").style.display = "none";
@@ -488,6 +535,7 @@
     }
 
     function filterMedium() {
+      document.getElementById("post0").style.display = "none";
       document.getElementById("post1").style.display = "none";
       document.getElementById("post2").style.display = "";
       document.getElementById("post3").style.display = "none";
@@ -496,6 +544,7 @@
       document.getElementById("post6").style.display = "none";
     }
     function filterLow() {
+      document.getElementById("post0").style.display = "none";
       document.getElementById("post1").style.display = "none";
       document.getElementById("post2").style.display = "none";
       document.getElementById("post3").style.display = "";

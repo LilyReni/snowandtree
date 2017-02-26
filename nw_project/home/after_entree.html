@@ -117,7 +117,7 @@
       		</div>
       		<div class="row">
       			<div class="col-xs-9">
-      			<p><strong>Description: </strong>More snow here</p>
+      			<p><strong>Description: </strong>The city hall needs your help! Too many cars are stuck on the hill, we would really appreciate it if the community can help with clearing the snow!</p>
       			</div>
             <div class="col-xs-1">
             </div>
@@ -423,10 +423,10 @@
           icon: 'road.png'
         });
 
-        var acc_text_0 = 'New Westminster City Hall';
-        var acc_text_1 = '668 Columbia Street';
-        var acc_text_2 = '109 Francis Way';
-        var acc_text_3 = '1045 Quayside Drive';
+        var acc_text_0 = "New Westminster City Hall <br><br><strong>Description: </strong>The city hall needs your help! <br>Too many cars are stuck on the hill, <br>we would really appreciate it if the <br>community can help with clearing the snow!";
+        var acc_text_1 = "668 Columbia Street <br><br><strong>Description: </strong>Car stuck on hill, need help clearing <br>the snow";
+        var acc_text_2 = "109 Francis Way <br><br><strong>Description: </strong>Family away on vacation, can someone <br>please help shovel snow on the <br>sidewalk? Thank you in advance!";
+        var acc_text_3 = "1045 Quayside Drive <br><br><strong>Description: </strong>Fallen tree in the front yard, would <br>appreciate it if someone can <br>help me clear it!</p>";
 
 
         var infowindow0 = new google.maps.InfoWindow({
@@ -485,6 +485,7 @@
     }
 
     function filterAll() {
+      document.getElementById("post0").style.display = "";
       document.getElementById("post1").style.display = "";
       document.getElementById("post2").style.display = "";
       document.getElementById("post3").style.display = "";
@@ -493,6 +494,7 @@
       document.getElementById("post6").style.display = "";
     }
     function filterSnow() {
+      document.getElementById("post0").style.display = "";
       document.getElementById("post1").style.display = "";
       document.getElementById("post2").style.display = "";
       document.getElementById("post3").style.display = "none";
@@ -502,6 +504,7 @@
     }
 
     function filterTree() {
+      document.getElementById("post0").style.display = "none";
       document.getElementById("post1").style.display = "";
       document.getElementById("post2").style.display = "none";
       document.getElementById("post3").style.display = "";
@@ -511,15 +514,17 @@
     }
 
     function filterOther() {
-      document.getElementById("post1").style.display = "";
-      document.getElementById("post2").style.display = "";
-      document.getElementById("post3").style.display = "";
-      document.getElementById("post4").style.display = "";
-      document.getElementById("post5").style.display = "";
-      document.getElementById("post6").style.display = "";
+      document.getElementById("post0").style.display = "none";
+      document.getElementById("post1").style.display = "none";
+      document.getElementById("post2").style.display = "none";
+      document.getElementById("post3").style.display = "none";
+      document.getElementById("post4").style.display = "none";
+      document.getElementById("post5").style.display = "none";
+      document.getElementById("post6").style.display = "none";
     }
 
     function filterHigh() {
+      document.getElementById("post0").style.display = "";
       document.getElementById("post1").style.display = "";
       document.getElementById("post2").style.display = "none";
       document.getElementById("post3").style.display = "none";
@@ -529,6 +534,7 @@
     }
 
     function filterMedium() {
+      document.getElementById("post0").style.display = "none";
       document.getElementById("post1").style.display = "none";
       document.getElementById("post2").style.display = "";
       document.getElementById("post3").style.display = "none";
@@ -537,6 +543,7 @@
       document.getElementById("post6").style.display = "none";
     }
     function filterLow() {
+      document.getElementById("post0").style.display = "none";
       document.getElementById("post1").style.display = "none";
       document.getElementById("post2").style.display = "none";
       document.getElementById("post3").style.display = "";
