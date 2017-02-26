@@ -100,13 +100,19 @@
 
 	<script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var acc_1 = {lat: 49.194, lng: -122.927};
+        var acc_2 = {lat: 49.223, lng: -122.892};
+
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
+          zoom: 13,
+          center: acc_1
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: acc_1,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: acc_2,
           map: map
         });
       }
